@@ -1,0 +1,65 @@
+.validation {
+    top: 100px;
+    left: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    color: black;
+}
+
+.naslov1 {
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 250px;
+    padding-right: 200px;
+    padding-top: 0;
+    justify-content: stretch;
+}
+
+.input-form {
+    background-color: rgb(41, 43, 44);
+    width: 28vw;
+    max-width: 35%;
+    padding: 3.5rem 5.5rem;
+    border-radius: 25px;
+    margin-right: 150px;
+    color: white;
+}
+
+.input-gr {
+    padding: 5px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#btn {
+    margin-bottom: 0;
+    width: 15.3vw;
+}
+
+.validation input {
+    outline: none;
+    background: none;
+    border: 1px solid steelblue;
+    font-size: 1.1em;
+    padding: 0.3em;
+    color: inherit;
+    border-radius: 6px;
+    align-items: flex-start;
+}
+
+.validation input:focus {
+    border-color: cadetblue;
+}
+
+@media (max-width:700px) {
+    .input-form {
+        width: 70vw;
+        max-width: inherit;
+        margin: 2rem 0;
+    }
+}

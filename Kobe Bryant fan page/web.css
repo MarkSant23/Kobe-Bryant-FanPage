@@ -1,0 +1,89 @@
+.webshop {
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(41, 43, 44, 0.7);
+}
+
+.container img {
+    height: 40vh;
+    width: 40vw;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+img:hover {
+    box-shadow: 3px 3px rgb(253, 185, 39);
+    cursor: pointer;
+}
+
+.container a {
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.div1 {
+    position: relative;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.btn-outline-warning {
+    position: relative;
+    float: right;
+    z-index: 11;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+.price {
+    height: 70px;
+    width: 70px;
+    justify-content: stretch;
+    background-color: rgb(41, 43, 44, 0.4);
+    border: 1px solid gold;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px;
+    margin-right: -140px;
+    margin-top: -50px;
+    float: right;
+    z-index: 12;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    overflow: hidden;
+}
+
+.btn-default {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.btn-default:focus {
+    background-color: gold;
+    color: white;
+    border: 1px solid rgb(85, 37, 130);
+}
+
+.active2 {
+    background-color: rgb(41, 43, 44);
+    text-align: left;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 550px;
+    max-width: 550px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 3px 5px rgb(253, 185, 39);
+}
+
+.text {
+    display: none;
+    color: white;
+}
+
+.row {
+    position: absolute;
+    top: 60px;
+    bottom: 20px;
+    width: 100%;
+    height: 350px;
+    right: 150px;
+}
+
+.container {
+    background-color: rgb(41, 43, 44);
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 450px;
+    border-radius: 10px;
+    position: absolute;
+    left: 500px;
+    top: 140px;
+    width: 500px;
+    box-shadow: 0 3px 3px rgb(253, 185, 39);
+}
+
+.up-down {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+.up-down-header {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+
+#text {
+    max-height: 0;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+.up-down.active #text {
+    max-height: 350px;
+    transition: 1s ease-in-out;
+}
+
+.main {
+    margin: 10px;
+    padding-right: 10px;
+    position: absolute;
+    z-index: 1;
+}
