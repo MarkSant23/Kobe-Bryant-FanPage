@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moj Kalkulator</title>
+<link rel="stylesheet" type="text/css" href="kalkultator.css">
+<script src="kalkulator.js"></script>
+
+</head>
+
+<body>
+<form>
+	<table class='calc' cellpadding='2' cellspacing='1'>
+		<tr>
+		  <td colspan='6'> <input class='calculator' size = '10' maxlength='27' id='display' name='display'></td>
+		 </tr>
+		<tr> 
+		  <td><input type='button' class='broj'value='1' onclick='ispis(this.form.display, "1")'></td>
+		  <td><input type='button' class='broj'value='2' onclick='ispis(this.form.display, "2")'></td>
+		  <td><input type='button' class='broj'value='3' onclick='ispis(this.form.display, "3")'></td>
+		  <td><input type='button' class='operator' value='+' onclick='ispis(this.form.display,"+")'></td>
+		  <td><input type='button' class='operator' value='--' onclick='del(this.form.display)'></td>
+		  
+		</tr>
+		 <tr>
+		  <td><input type='button' class='broj'value='4' onclick='ispis(this.form.display, "4")'></td>
+		  <td><input type='button' class='broj'value='5' onclick='ispis(this.form.display, "5")'></td>
+		  <td><input type='button' class='broj'value='6' onclick='ispis(this.form.display, "6")'></td>
+		  <td><input type='button' class='operator' value='-' onclick='ispis(this.form.display, "-")'></td>
+		  <td><input type='button' class='operator' value='AC' onclick='this.form.display.value = 0'></td>
+		  
+		 </tr>
+		 <tr>
+		  <td><input type='button' class='broj'value='7' onclick='ispis(this.form.display, "7")'></td>
+		  <td><input type='button' class='broj'value='8' onclick='ispis(this.form.display, "8")'></td>
+		  <td><input type='button' class='broj'value='9' onclick='ispis(this.form.display, "9")'></td>
+		  <td><input type='button' class='operator' value='/' onclick='ispis(this.form.display, "/")'></td>
+		  <td><input type='button' class='operator' value='.' onclick='ispis(this.form.display, ".")'></td>
+		  
+		</tr>
+		<tr>
+		  <td><input type='button' class='bbb' value='%' onclick='postotak(this.form.display)'></td>
+		  <td><input type='button' class='broj'value='0' onclick='ispis(this.form.display, "0")'></td>
+		  <td><input type='button' class='operator' value='=' onclick='if(provjera(this.form.display.value)) {prebroji(this.form)}'></td>
+		  <td><input type='button' class='operator' value='*' onclick='ispis(this.form.display, "*")'></td>
+		  <td><input type='button' class='operator' value='log' onclick='if(provjera(this.form.display.value)) { log(this.form) }'></td>
+		  
+		</tr>
+		<tr>
+		  <td><input type='button' class='bbb' value='(' onclick='ispis(this.form.display, "(")'></td>
+		  <td><input type='button' class ='bbb' value=')' onclick='ispis(this.form.display, ")")'></td>
+		  <td><input type='button' class='bbb' value='PI' onclick='ispis(this.form.display, "3.14159265359")'></td>
+		  <td><input type='button' class='mathf' value='x^' onclick='if(provjera(this.form.display.value)) {eksponent(this.form)}')></td>
+		  <td><input type='button' class='mathf' value='x^2' onclick='if(provjera(this.form.display.value)) { kvadriranje(this.form)}'></td>
+		</tr>
+		<tr>
+			<td><input type='button' class='mathf' value='sqrt' onclick='if(provjera(this.form.display.value)) { sqrt(this.form) }' )></td>
+			<td><input type='button' class='mathf' value='sin' onclick='if(provjera(this.form.display.value)) { sin(this.form) }'></td>
+			<td><input type='button' class='mathf' value='cos' onclick='if(provjera(this.form.display.value)) { cos(this.form) }'></td>
+			<td><input type='button' class='mathf' value='tan' onclick='if(provjera(this.form.display.value)) { tan(this.form) }'></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
